@@ -124,7 +124,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-CSRF_COOKIE_SECURE = True
+"""CSRF_COOKIE_SECURE = True
 
 SESSION_COOKIE_SECURE = True
 
@@ -134,12 +134,10 @@ SESSION_COOKIE_HTTPONLY = True
 
 SECURE_SSL_REDIRECT = True
 
-ABSOLUTE_URL_OVERRIDES = {
-    'auth.user':lambda u:reverse_lazy('user_detail',args=[u.username])
-}
+}"""
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
