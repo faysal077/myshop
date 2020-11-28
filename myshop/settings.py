@@ -60,8 +60,7 @@ ROOT_URLCONF = 'myshop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -140,8 +139,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CART_SESSION_ID = 'cart'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'bravolulu07@gmail.com'
+EMAIL_HOST_PASSWORD = '@12345@Bangladesh#'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
