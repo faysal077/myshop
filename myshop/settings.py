@@ -11,12 +11,11 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 from django.urls import reverse_lazy
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+#BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -153,6 +152,5 @@ EMAIL_HOST_USER = 'bravolulu07@gmail.com'
 EMAIL_HOST_PASSWORD = '@12345@Bangladesh#'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-
 
 
