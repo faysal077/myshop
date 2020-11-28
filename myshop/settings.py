@@ -135,7 +135,7 @@ SESSION_COOKIE_HTTPONLY = True
 SECURE_SSL_REDIRECT = True
 
 STATIC_URL = '/static/'
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
@@ -143,9 +143,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 CART_SESSION_ID = 'cart'
 
 
-"""STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)"""
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
